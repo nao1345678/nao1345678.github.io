@@ -1,0 +1,370 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Font import */
+@font-face {
+  font-family: 'Press Start 2P';
+  src: url('../fonts/transfonter.org-20240123-212635/PressStart2P-Regular.woff2') format('woff2'),
+    url('../fonts/transfonter.org-20240123-212635/PressStart2P-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Header */
+body {
+  background-color: #fcd5f8;
+  color: #4d005f;
+  overflow-x: hidden;
+  cursor: url('../../../public/HelloKitty.svg'), auto;
+}
+hr {
+  color: #eb233b;
+}
+.header {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: flex-end;
+  bottom: 20rem;
+  width: fit-content;
+  font-size: 75%;
+  font-family: 'Press Start 2P';
+}
+.menu {
+  gap: 0.2rem;
+  width: fit-content;
+  display: flex;
+}
+.navigation {
+  margin-left: 42rem;
+  justify-content: flex-end;
+  padding: 1.2rem;
+}
+.ul-nav {
+  display: flex;
+  gap: 3rem;
+}
+.about-content-div {
+  margin: 8rem;
+}
+.cv {
+  color: #eb233b;
+  font-style: italic;
+}
+.li_:hover,
+.li_:focus {
+  transform: scale(1.1);
+  transition: 0.05s;
+  cursor: url('../../../public/HelloKitty_hover.svg'), auto;
+}
+a {
+  cursor: url('../../../public/HelloKitty_hover.svg'), auto;
+}
+.logo {
+  width: fit-content;
+  margin: 0.4rem;
+  margin-left: 0.6rem;
+}
+.logo.hover {
+  animation: rotate 500ms linear initial;
+}
+.name {
+  padding: 1.2rem;
+}
+/* Actual page */
+.content-app {
+  height: 9.5rem;
+}
+.projects-button {
+  background-color: #eb233b;
+  font-family: 'Press Start 2P';
+  color: #ffffff;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-top: 0.7rem;
+  font-size: 75%;
+}
+Link {
+  cursor: url('../../../public/HelloKitty_hover.svg'), auto;
+}
+.projects-button:hover,
+.projects-button:focus {
+  box-shadow: 2px 2px 2px 1px rgba(85, 9, 85, 0.368);
+  transform: translateY(-0.25em);
+  background-color: #600375;
+  transition: 0.08s;
+  cursor: url('../../../public/HelloKitty_hover.svg'), auto;
+}
+.title {
+  justify-content: flex-start;
+  font-family: 'Press Start 2P';
+  font-size: 297%;
+  width: 70rem;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing;
+  animation-duration: 2.5s;
+  animation-timing-function: steps(30, end);
+  animation-fill-mode: forwards;
+}
+.summary {
+  font-family: 'Press Start 2P';
+  font-size: large;
+  margin: 9rem;
+  color: #eb233b;
+  margin-left: 10rem;
+}
+.title-admin {
+  justify-content: flex-start;
+  font-family: 'Press Start 2P';
+  font-size: 200%;
+  width: fit-content;
+}
+.up {
+  background-color: #ffa1ea;
+}
+.deco {
+  position: absolute;
+  bottom: 15rem;
+  right: 20px;
+  width: 15rem;
+}
+.pixel-fail {
+  background-color: #ffa1ebb4;
+  width: 110%;
+  box-shadow: 0 0 10px 10px #fcd5f8 inset;
+  height: 530px;
+}
+.tags {
+  display: flex;
+}
+.home-txt {
+  justify-content: flex-start;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  display: inline-block;
+}
+.heart_gif {
+  position: relative;
+  width: 10rem;
+  left: 45rem;
+  bottom: 10rem;
+}
+.small-desc {
+  width: 50rem;
+}
+.line-nav {
+  width: 1512px;
+  height: 1px;
+  border-top: 1.5px dashed #eb233b;
+}
+/* Project */
+.Project {
+  height: 530px;
+  padding: 5rem;
+  display: flex;
+  width: 100%;
+  gap: 7rem;
+}
+.repo-button {
+  background-color: #eb233b;
+  color: white;
+  font-family: 'Press Start 2P';
+  padding-top: 0.63rem;
+  padding-bottom: 0.63rem;
+  padding-left: 1.35rem;
+  padding-right: 1.35rem;
+  font-size: 63.5%;
+}
+.text-project {
+  width: fit-content;
+  margin: 4rem;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.container {
+  width: 28rem;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-picture {
+  max-width: 100%;
+  height: auto;
+}
+.project-title,
+.rubric-title {
+  font-family: 'Press Start 2P';
+  font-size: 35px;
+  width: 30rem;
+}
+.repo-button:hover {
+  box-shadow: 2px 2px 2px 1px rgba(85, 9, 85, 0.368);
+  transform: translateY(-0.25em);
+  background-color: #600375;
+  transition: 0.08s;
+  cursor: url('../../../public/HelloKitty_hover.svg'), auto;
+}
+.html-tags {
+  background-color: #eb233b;
+  padding: 0.6rem;
+  list-style: none;
+  display: flex;
+  margin-right: 1rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  width: fit-content;
+  height: fit-content;
+  color: white;
+  font-family: 'Press Start 2P';
+  font-size: 10px;
+}
+.project-description,
+.about {
+  font-size: 18px;
+  width: 35rem;
+  margin-bottom: 0.8rem;
+  text-justify: distribute;
+}
+/* About me */
+.summary-about {
+  font-family: 'Press Start 2P';
+  font-size: large;
+  margin: 9rem;
+  color: #eb233b;
+  margin-left: 10rem;
+  display: flex;
+}
+.rubric-title-1 {
+  font-family: 'Press Start 2P';
+  font-size: 25px;
+  width: 30rem;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing infinite;
+  animation-duration: 5s;
+  animation-timing-function: steps(30, end);
+  animation-fill-mode: forwards;
+}
+.hearts {
+  position: absolute;
+  width: 25rem;
+  right: 30px;
+  top: 25rem;
+}
+.basic {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 35rem;
+}
+.basic-section {
+  display: flex;
+  gap: 5rem;
+}
+.contact-section {
+  display: flex;
+  gap: 5rem;
+}
+.contact {
+  text-align: right;
+}
+.contact-pic {
+  width: 25rem;
+  position: relative;
+  bottom: 60px;
+}
+.paper-pic {
+  width: 30rem;
+  margin: 3rem;
+  position: relative;
+  bottom: 8rem;
+}
+.pro-section {
+  display: flex;
+}
+.pro-desc {
+  width: 40rem;
+}
+.pro-pic {
+  width: 60%;
+  position: relative;
+  bottom: 5rem;
+}
+.no {
+  justify-content: flex-end;
+  text-align: right;
+}
+.rubric-title {
+  width: fit-content;
+}
+.personal-pic {
+  width: 25rem;
+  position: relative;
+  bottom: 4rem;
+}
+.perso-section {
+  display: flex;
+  gap: 10rem;
+}
+.perso-desc {
+  width: 45rem;
+}
+/* Footer */
+.footer {
+  display: flex;
+  position: relative;
+  bottom: 0;
+  padding: 0.5rem;
+  gap: 40rem;
+  align-items: center;
+  justify-content: center;
+}
+.Button {
+  position: fixed;
+  bottom: 35px;
+  right: 30px;
+  scroll-behavior: smooth;
+  animation: rotate 2s linear infinite;
+}
+.social-media {
+  margin-left: 2rem;
+  display: flex;
+  gap: 5rem;
+}
+.copyright {
+  padding: 0rem;
+  font-family: 'Press Start 2P';
+  font-size: 55%;
+  color: #ff6ce9;
+  right: 15px;
+}
+.pinterest.svg {
+  width: 30px;
+}
